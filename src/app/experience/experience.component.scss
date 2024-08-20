@@ -1,0 +1,101 @@
+/* Experience Section */
+#experience {
+    background: url('/assets/experience.png') no-repeat center center/cover;
+    background-size: cover;
+    padding: 7em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#experience .experience-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#experience .experience-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    background: #fffffff7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow:10px 10px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+    &.selected-item {
+        background-color: beige; /* Highlight selected item with beige color */
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+        border-left: 10px solid darkorange; /* Left border to indicate selection */
+    }
+
+    &:hover {
+        background-color: #f0f0f0; /* Light gray hover effect */
+        box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15); /* Subtle shadow increase */
+    }
+
+}
+
+#experience .experience-summary {
+    padding: 15px;
+}
+
+#experience .experience-detail-container {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff; /* Ensure contrast with text */
+    color: black; /* Set text color to ensure visibility */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    text-align: left;
+}
+
+#experience .experience-details-list {
+    padding-left: 0; /* Remove extra padding from the list itself */
+    list-style: none; /* Remove default list styling */
+}
+
+#experience .experience-details-list li {
+    position: relative;
+    padding-left: 40px; /* Increase padding to create gap between bullet and text */
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#experience .experience-details-list li::before {
+    content: '\25B2'; /* Unicode for a right-pointing triangle */
+    position: absolute;
+    left: 10px; /* Adjust as needed for proper alignment */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #007bff;
+    font-size: 16px; /* Adjust size as needed */
+}
+
+#experience .experience-detail-container.show {
+    opacity: 1;
+}
+
+#experience h3 {
+    color: #007bff;
+}
+
+// #experience a{
+//     font-size: 1.2em;
+//     color: #007bff;
+//     font-weight: bold;
+//     text-decoration: none;
+// }
+
+// #experience a:hover{
+//     color: #0056b3;
+// }

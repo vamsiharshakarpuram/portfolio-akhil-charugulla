@@ -1,0 +1,115 @@
+/* Navigation */
+// nav {
+//     background-color: rgb(12, 12, 12); /* Dark Gray */
+//     padding: 0.5em 0;
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     z-index: 1000;
+//     transition: all 0.3s ease;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow for a premium feel */
+// }
+
+// /* Container for proper alignment */
+// nav .container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 1em;
+//     margin-left: 20em;
+// }
+
+// /* Logo styling */
+// nav .logo {
+//     font-family: 'Lobster', cursive;
+//     font-size: 1.8em;
+//     font-weight: bold;
+//     color: rgb(242, 232, 232);
+//     text-decoration: none;
+//     transition: color 0.3s ease, transform 0.3s ease;
+// }
+
+
+nav {
+    background-color: rgb(12, 12, 12);
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    font-family: 'Montserrat';
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(242, 232, 232);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin-left: 100px; /* Push logo to the left */
+}
+
+nav .logo:hover {
+    color: #f5f5f5; /* Accent color on hover */
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+/* Navigation menu */
+nav .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-left: 100px;
+}
+
+/* Navigation menu items */
+nav .nav-menu li {
+    display: inline;
+}
+
+/* Navigation links */
+nav .nav-menu a {
+    color: rgb(184, 172, 172); /* Initial color */
+    text-decoration: none;
+    padding: 10px 20px; /* More padding for a better click area */
+    border-radius: 5px;
+    transition: color 0.3s ease; /* Subtle color transition */
+    font-size: 1em;
+    font-weight: 500; /* Slightly bolder font for better readability */
+}
+
+/* Navigation links hover effect */
+nav .nav-menu a:hover,
+nav .nav-menu .active a {
+    color: white; /* Color changes to white on hover or when active */
+}
+
+/* Highlight the default active link */
+nav .nav-menu .active a {
+    color: white; /* Default highlight for the active item */
+}
+
+/* Mobile menu icon styling */
+#mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu-icon:hover {
+    color: #f5f5f5; /* Light gradient color for mobile menu icon on hover */
+}

@@ -1,0 +1,107 @@
+<!-- projects Section
+<section id="project">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic">PROJECTS</h2>
+        <div class="project-row">
+            <a href="https://devpost.com/software/streamlining-campus-dining" target="_blank" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="img-container">
+                    <img src="../../assets/expense.png" alt="Streamlining-campus-dining">
+                </div>
+                <div class="project-title">
+                <h3>Streamlining Campus Dining</h3>
+                </div>
+            </a>
+            <a href="https://github.com/akhilcharugulla/frontend-projects/tree/master/tic_tac_toe" target="_blank" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">
+                <div class="img-container">
+                    <img class="project-img" src="../../assets/bankruptsy.png" alt="Predicting Bankruptcy Risk with Machine Learning">
+                </div>
+                <h3>Tic Tac Toe Game</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=3XAwT8Ifueg" target="_blank" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="800">
+                <div class="img-container">
+                    <img class="project-img" src="../../assets/gymaccess.png" alt="Todo Management Application">
+                </div>
+                <h3>Todo Management Application</h3>
+            </a>
+        </div>
+        <div class="project-row">
+            <a href="https://akhilcharugulla.github.io/Rockpapaerscissor-clone-for-deployment/" target="_blank" target="_blank" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1000">
+                <div class="img-container">
+                <img class="project-img" src="../../assets/rock-paper-scissor/1-Rock paper Scissor-home.png" alt="Rock Paper Scissor Game">
+                </div>
+                <h3>Rock Paper Scissor Game</h3>
+            </a>
+            <a href="https://akhilcharugulla.github.io/calculator-for-deployment/" data-aos="zoom-in" target="_blank" data-aos-duration="1200" data-aos-delay="1200">
+                <div class="img-container">
+                    <img class="project-img" src="../../assets/gymaccess.png" alt="Calculator Application">
+                </div>
+                <h3>Calculator Application</h3>
+            </a>
+            <a href="https://www.youtube.com/watch?v=XsTl_Lvbvys" target="_blank" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="1400">
+                <div class="img-container">
+                    <img class="project-img" src="../../assets/gymaccess.png" alt="Employee Management System">
+                </div>
+                <h3>Employee Management System</h3>
+            </a>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- <section id="project">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic">PROJECTS</h2>
+        <div class="project-row">
+            <p-carousel [value]="projects" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+                <div></div>
+                <ng-template let-project pTemplate="item">
+                    <div class="project-item">
+                        <p-carousel class="inner-carousel" [value]="project.images" [numVisible]="1" [numScroll]="1" [circular]="true" [responsiveOptions]="responsiveOptions">
+                            <ng-template let-image pTemplate="item">
+                                <div class="img-container">
+                                    <img [src]="image" [alt]="project.title">
+                                </div>
+                            </ng-template>
+                        </p-carousel>
+                        <div class="project-title">
+                            <h3>{{project.title}}</h3>
+                        </div>
+                        <div class="project-links">
+                            <a [href]="project.link" target="_blank" class="p-button p-button-rounded p-button-info">View Project</a>
+                            <a [href]="project.gitUrl" target="_blank" class="p-button p-button-rounded p-button-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-carousel>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section id="project">
+    <div class="container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic">PROJECTS</h2>
+        <div class="project-grid">
+            <ng-container *ngFor="let project of projects; let i = index">
+                <div class="project-item" [ngClass]="{'top-row': i < 3, 'bottom-row': i >= 3}">
+                    <p-carousel [value]="project.images" [numVisible]="1" [numScroll]="1" [circular]="true" [showNavigators]="true">
+                        <ng-template let-image pTemplate="item">
+                            <div class="img-container">
+                                <img [src]="image" [alt]="project.title">
+                            </div>
+                        </ng-template>
+                    </p-carousel>
+                    <div class="project-title">
+                        <h3>{{project.title}}</h3>
+                    </div>
+                    <div class="project-links">
+                        <a [href]="project.link" target="_blank" class="p-button p-button-rounded p-button-info">View Project</a>
+                        <a [href]="project.gitUrl" target="_blank" class="p-button p-button-rounded p-button-secondary">GitHub</a>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,605 @@
+// /* Portfolio Section */
+// #project {
+//     background: url('/assets/projects.png') no-repeat center center/cover;
+//     padding: 4em;
+//     text-align: center;
+//     font-family: 'Roboto', sans-serif;
+//     color: #fff;
+// }
+
+// #project h2 {
+//     color: black;
+//     font-size: 1.5em;
+//     margin-bottom: 1em;
+// }
+
+// #project .container {
+//     background: rgba(255, 255, 255, 0.94);
+//     border-radius: 10px;
+//     padding: 2em;
+// }
+
+// .project-row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 10em;
+//     margin-bottom: 2em;
+// }
+
+// .project-row a {
+//     flex: 0 1 calc(25% - 1.5em); 
+//     min-width: 200px;
+//     max-width: 230px; 
+//     text-decoration: none;
+//     color: #007bff;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .project-row a:hover {
+//     transform: translateY(-5px);
+//     color: #294b6c;
+// }
+
+// .img-container {
+//     width: 100%;
+//     padding-top: 100%;
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 10px;
+//     margin-bottom: 0.5em;
+// }
+
+// .project-row img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     transition: transform 0.1s ease;
+// }
+
+// .project-row a:hover img {
+//     transform: scale(1.2);
+// }
+
+// .project-row h3 {
+//     font-size: 0.9em;
+//     line-height: 1.2em;
+//     margin-top: 0.5em;
+//     color: inherit; 
+// }
+
+
+
+// /* Portfolio Section */
+// #project {
+//     background: url('/assets/projects.png') no-repeat center center/cover;
+//     padding: 4em;
+//     text-align: center;
+//     font-family: 'Roboto', sans-serif;
+//     color: #fff;
+// }
+
+// #project h2 {
+//     color: black;
+//     font-size: 1.5em;
+//     margin-bottom: 1em;
+// }
+
+// #project .container {
+//     background: rgba(255, 255, 255, 0.94);
+//     border-radius: 10px;
+//     padding: 2em;
+//     max-width: 1200px;
+//     margin: 0 auto;
+// }
+
+// .project-grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 2em;
+//     margin-bottom: 2em;
+// }
+
+// .project-item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     max-width: 350px;
+//     margin: 0 auto;
+// }
+
+// /* PrimeNG Carousel Customization */
+// :host ::ng-deep .p-carousel {
+//     width: 100%;
+//     height: 250px;  /* Fixed height for all carousels */
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-content,
+// :host ::ng-deep .p-carousel .p-carousel-container,
+// :host ::ng-deep .p-carousel .p-carousel-items-container {
+//     height: 100%;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-item {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .img-container {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 10px;
+// }
+
+// .img-container img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center;
+// }
+
+// .project-title h3 {
+//     font-size: 1em;
+//     margin: 0.5em 0;
+//     color: #333;
+// }
+
+// .project-links {
+//     display: flex;
+//     gap: 1em;
+//     margin-top: 0.5em;
+// }
+
+// .project-links a {
+//     text-decoration: none;
+//     padding: 0.5em 1em;
+//     border-radius: 20px;
+//     font-size: 0.9em;
+//     transition: background-color 0.3s ease;
+// }
+
+// .project-links a:hover {
+//     opacity: 0.8;
+// }
+
+// /* PrimeNG Carousel Customization */
+// :host ::ng-deep .p-carousel {
+//     width: 100%;
+//     height: 250px;  /* Fixed height for all carousels */
+//     position: relative;  /* Add this */
+// }
+
+// /* ... (keep other styles as they are) ... */
+
+// :host ::ng-deep .p-carousel .p-carousel-prev,
+// :host ::ng-deep .p-carousel .p-carousel-next {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background: rgba(0, 0, 0, 0.5);
+//     color: white;
+//     border: none;
+//     border-radius: 50%;
+//     width: 2em;
+//     height: 2em;
+//     font-size: 1em;
+//     z-index: 2;
+//     display: flex;  /* Add this */
+//     align-items: center;  /* Add this */
+//     justify-content: center;  /* Add this */
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-prev {
+//     left: 0.5em;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-next {
+//     right: 0.5em;
+// }
+
+// /* Add this new rule */
+// :host ::ng-deep .p-carousel .p-carousel-prev span,
+// :host ::ng-deep .p-carousel .p-carousel-next span {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// /* Ensure icons are visible on hover */
+// :host ::ng-deep .p-carousel .p-carousel-prev:not(.p-disabled):hover,
+// :host ::ng-deep .p-carousel .p-carousel-next:not(.p-disabled):hover {
+//     background: rgba(0, 0, 0, 0.7);
+// }
+
+// /* Responsive adjustments */
+// @media (max-width: 1200px) {
+//     .project-grid {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .project-grid {
+//         grid-template-columns: 1fr;
+//     }
+    
+//     .project-item {
+//         max-width: 100%;
+//     }
+// }
+
+
+
+
+
+// /* Portfolio Section */
+// #project {
+//     background: url('/assets/projects.png') no-repeat center center/cover;
+//     padding: 4em;
+//     text-align: center;
+//     font-family: 'Roboto', sans-serif;
+//     color: #fff;
+// }
+
+// #project h2 {
+//     color: black;
+//     font-size: 1.5em;
+//     margin-bottom: 1em;
+// }
+
+// #project .container {
+//     background: rgba(255, 255, 255, 0.94);
+//     border-radius: 10px;
+//     padding: 2em;
+//     max-width: 1400px;
+//     margin: 0 auto;
+// }
+
+// .project-grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 2em;
+//     margin-bottom: 2em;
+// }
+
+// .project-item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     max-width: 350px;
+//     margin: 0 auto;
+// }
+
+// /* New wrapper for carousel */
+// .carousel-wrapper {
+//     width: 100%;
+//     height: 250px;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// /* PrimeNG Carousel Customization */
+// :host ::ng-deep .p-carousel {
+//     width: 100%;
+//     height: 250px;
+//     position: relative;
+//     overflow: hidden;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-content,
+// :host ::ng-deep .p-carousel .p-carousel-container,
+// :host ::ng-deep .p-carousel .p-carousel-items-container {
+//     height: 100%;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-item {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .img-container {
+//     width: 100%;
+//     height: 100%;
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 10px;
+// }
+
+// .img-container img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center;
+// }
+
+// .project-title h3 {
+//     font-size: 1em;
+//     margin: 0.5em 0;
+//     color: #333;
+// }
+
+// .project-links {
+//     display: flex;
+//     gap: 1em;
+//     margin-top: 0.5em;
+// }
+
+// .project-links a {
+//     text-decoration: none;
+//     padding: 0.5em 1em;
+//     border-radius: 20px;
+//     font-size: 0.9em;
+//     transition: background-color 0.3s ease;
+// }
+
+// .project-links a:hover {
+//     opacity: 0.8;
+// }
+
+// /* Carousel navigation buttons */
+// :host ::ng-deep .p-carousel .p-carousel-prev,
+// :host ::ng-deep .p-carousel .p-carousel-next {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     background: rgba(0, 0, 0, 0.5);
+//     color: white;
+//     border: none;
+//     border-radius: 50%;
+//     width: 2em;
+//     height: 2em;
+//     font-size: 1em;
+//     z-index: 2;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-prev {
+//     left: 0.5em;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-next {
+//     right: 0.5em;
+// }
+
+// :host ::ng-deep .p-carousel .p-carousel-prev span,
+// :host ::ng-deep .p-carousel .p-carousel-next span {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// /* Ensure icons are visible on hover */
+// :host ::ng-deep .p-carousel .p-carousel-prev:not(.p-disabled):hover,
+// :host ::ng-deep .p-carousel .p-carousel-next:not(.p-disabled):hover {
+//     background: rgba(0, 0, 0, 0.7);
+// }
+
+// /* Responsive adjustments */
+// @media (max-width: 1200px) {
+//     .project-grid {
+//         grid-template-columns: repeat(2, 1fr);
+//     }
+// }
+
+// @media (max-width: 768px) {
+//     .project-grid {
+//         grid-template-columns: 1fr;
+//     }
+    
+//     .project-item {
+//         max-width: 100%;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Section */
+#project {
+    background: url('/assets/projects.png') no-repeat center center/cover;
+    padding: 4em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+#project h2 {
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#project .container {
+    background: rgba(255, 255, 255, 0.94);
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.img-container {
+    width: 100%;
+    min-height: 200px; /* Set an explicit minimum height */
+    height: 100%; /* Allow it to grow with content */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto; /* Let the height adjust based on the width */
+    max-height: 100%; /* Prevent the image from exceeding the container height */
+    object-fit: cover;
+    object-position: center;
+    display: block; /* Ensures no extra space below the image */
+}
+
+/* New wrapper for carousel */
+.carousel-wrapper {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* PrimeNG Carousel Customization */
+:host ::ng-deep .p-carousel {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-content,
+:host ::ng-deep .p-carousel .p-carousel-container,
+:host ::ng-deep .p-carousel .p-carousel-items-container {
+    height: 100%;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-title h3 {
+    font-size: 1em;
+    margin: 0.5em 0;
+    color: #333;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+    margin-top: 0.5em;
+}
+
+.project-links a {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    opacity: 0.8;
+}
+
+/* Carousel navigation buttons */
+:host ::ng-deep .p-carousel .p-carousel-prev,
+:host ::ng-deep .p-carousel .p-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: 1em;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev {
+    left: 0.5em;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-next {
+    right: 0.5em;
+}
+
+:host ::ng-deep .p-carousel .p-carousel-prev span,
+:host ::ng-deep .p-carousel .p-carousel-next span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure icons are visible on hover */
+:host ::ng-deep .p-carousel .p-carousel-prev:not(.p-disabled):hover,
+:host ::ng-deep .p-carousel .p-carousel-next:not(.p-disabled):hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-item {
+        max-width: 100%;
+    }
+}
+
+
+

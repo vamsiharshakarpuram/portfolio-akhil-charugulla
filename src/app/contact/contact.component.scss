@@ -1,0 +1,104 @@
+#contact {
+    padding: 4em 2em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    border-top: 1px solid #ddd; /* Subtle border for separation */
+}
+
+#contact h2 {
+    color: #010101;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff; /* White background for the form */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact input, #contact textarea {
+    width: calc(100% - 2em); /* Adjust width to account for padding */
+    padding: 1em;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.8em; 
+}
+
+#contact textarea {
+    height: 150px; /* Increase height for better readability */
+    resize: vertical; /* Allow users to resize the textarea vertically */
+    font-size: 1em;
+}
+
+#contact .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 0.75em 1.5em; /* Adjust padding for better button size */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer; /* Show pointer cursor for button */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#contact .btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+#contact .btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+#contact .btn:disabled:hover {
+    background: #cccccc;
+    transform: none;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.social-links {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center; /* Center social icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social-links a {
+    color: #333;
+    font-size: 2em; /* Larger icons */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #000000; /* Darker shade for hover effect */
+    //transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+.linkedInstyle a {
+    color: #0077b5; /* LinkedIn brand color */
+    font-size: 2.2em; /* Slightly larger for emphasis */
+}
+
+.linkedInstyle a:hover {
+    transform: scale(1.1); 
+    color: #005582; 
+}
+
+
