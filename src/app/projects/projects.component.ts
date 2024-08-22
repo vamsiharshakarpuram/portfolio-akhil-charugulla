@@ -82,11 +82,11 @@ export class ProjectsComponent {
         title: 'Streamlining Campus Dining',
         link: 'https://devpost.com/software/streamlining-campus-dining',
         gitUrl: 'https://github.com/farhanarrafi/hackunt2023-dining-scheduler',
-        images:['assets/1-login.png',
-          'assets/2-meal-options.png',
-          'assets/3-table-options.png',
-          'assets/4-menu-selection.png',
-          'assets/5-confirmation.png'
+        images:['assets/1-campus-dining-login.png',
+          'assets/2-campus-dining-meal-select.png',
+          'assets/3-campus-dining-timeslots.png',
+          'assets/4-campus-dining-options.png',
+          'assets/5-campus-dining-confirmation.png'
         ],
         delay: 300
       }
